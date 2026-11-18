@@ -1,0 +1,43 @@
+@import './tokens.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { background: var(--ground); }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; }
+a { color: var(--accent); }
+a:hover { color: var(--accent-hover); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding-inline: var(--gutter); }
+.display { font-family: var(--font-display); font-weight: 600; letter-spacing: .02em; margin: 0; }
+.eyebrow {
+  font-family: var(--font-ui); font-size: 12px; letter-spacing: .24em;
+  text-transform: uppercase; color: var(--accent);
+}
+.sr-only:not(:focus) {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* Imported GitBook Markdown */
+.prose { max-width: var(--prose); overflow-wrap: anywhere; }
+.prose h1, .prose h2, .prose h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.25; }
+.prose h2 { margin-top: 2em; }
+.prose table { border-collapse: collapse; width: 100%; font-size: 16px; display: block; overflow-x: auto; }
+.prose th, .prose td { border: 1px solid var(--line-strong); padding: 8px 12px; text-align: left; }
+.prose blockquote, .prose .hint {
+  margin: 1.5em 0; padding: 12px 20px; background: var(--well);
+  border-left: 3px solid var(--accent);
+}
+.prose hr { border: 0; border-top: 1px solid var(--line); margin: 2.5em 0; }
+.prose code { font-size: .9em; background: var(--well); padding: 1px 5px; }
+.prose iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }

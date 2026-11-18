@@ -1,0 +1,5 @@
+// Prefix a root-relative path with the site's base path, so links and
+// assets work both locally and on GitHub Pages ("/goalie-guild/").
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+export const url = (path: string) => `${base}${path}`;

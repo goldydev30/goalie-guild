@@ -1,0 +1,30 @@
+/* "Guild Hall" placeholder tokens: iron, stone and parchment with a gilded accent.
+   The castle homepage design will replace these; change the look here first. */
+:root {
+  --ground: #0e0d0c;
+  --panel: #171513;
+  --well: #201d1a;
+  --line: #2c2824;
+  --line-strong: #3d3832;
+
+  --text: #ece4d6;      /* parchment */
+  --text-2: #cfc5b4;
+  --muted: #a3998a;
+
+  --accent: #c9a24a;    /* guild gold */
+  --accent-hover: #e3c06e;
+  --crest: #8e2f2a;     /* banner red */
+
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+
+  --radius: 2px;
+  --max: 1200px;
+  --prose: 72ch;
+  --gutter: 32px;
+}
+
+@media (max-width: 640px) {
+  :root { --gutter: 16px; }
+}

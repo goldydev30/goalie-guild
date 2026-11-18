@@ -1,0 +1,46 @@
+---
+// PLACEHOLDER homepage. The medieval castle landing page (scroll over spires
+// to enter each area) is being designed separately and will replace this.
+// Keep linking to the areas in src/data/sections.ts so the castle can reuse them.
+import Base from '../layouts/Base.astro';
+import { sections } from '../data/sections';
+import { url } from '../lib/url';
+---
+<Base>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Placeholder · castle homepage in design</div>
+      <h1 class="display">The Goalie Guild</h1>
+      <p>Choose a wing of the castle.</p>
+    </div>
+  </section>
+  <section class="wrap">
+    <ul class="wings">
+      {sections.map((s) => (
+        <li>
+          <a href={url(s.path)}>
+            <span class="display">{s.title}</span>
+            <span>{s.blurb}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .hero .wrap { padding-block: 96px 48px; }
+  .hero h1 { font-size: clamp(40px, 7vw, 80px); }
+  .hero p { color: var(--text-2); font-size: 20px; }
+  .wings {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px;
+  }
+  .wings a {
+    display: flex; flex-direction: column; gap: 8px; height: 100%;
+    padding: 24px; background: var(--panel); border: 1px solid var(--line);
+    color: var(--text-2); text-decoration: none;
+  }
+  .wings a:hover { border-color: var(--accent); }
+  .wings .display { color: var(--text); font-size: 22px; }
+</style>
