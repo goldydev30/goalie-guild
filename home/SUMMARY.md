@@ -22,8 +22,3 @@
 * [🔵 Toolkits](resources/toolkits.md)
 * [🔵 Research](resources/research.md)
 * [🔵 Books](resources/books.md)
-
-## LIFT THE MASK
-
-* [🟢 Intro](lift-the-mask/intro.md)
-* [🟢 Providers](lift-the-mask/providers.md)
