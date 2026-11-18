@@ -30,16 +30,16 @@ Every merge to `main` deploys to GitHub Pages at https://goldydev30.github.io/go
 
 ## Importing the GitBook
 
-GitBook Git Sync writes the space to the `gitbook` branch. To pull it into the site:
+GitBook Git Sync (GitBook → GitHub) writes the space to the `gitbook` branch, under `home/`. To pull it into the site:
 
 ```sh
 git fetch origin gitbook
 git worktree add gitbook-export origin/gitbook
-npm run import:gitbook -- gitbook-export
+npm run import:gitbook -- gitbook-export/home
 git worktree remove gitbook-export
 ```
 
-The script keeps each page's path (`foundation/intro/mission.md` becomes `/foundation/intro/mission/`), copies images from `.gitbook/assets/` to `public/assets/gitbook/`, and turns GitBook blocks (hints, embeds, page links, files, tabs) into plain Markdown or HTML. Re-running it overwrites the imported pages, so make edits in GitBook until the switch, or stop syncing and edit here.
+The script keeps each page's path (`foundation/intro/mission.md` becomes `/foundation/intro/mission/`), copies only the images pages use from `.gitbook/assets/` to `public/assets/gitbook/` (shrinking anything over 1600px wide or 500 KB), and turns GitBook blocks (hints, YouTube/Spotify embeds, page mentions, card tables, files, tabs) into plain Markdown or HTML, and uses each page's GitBook cover as its banner. Re-running it overwrites the imported pages, so make edits in GitBook until the switch, or stop syncing and edit here.
 
 Because paths match, an old link like `thegoalieguild.gitbook.io/home/foundation/donate` maps to `/foundation/donate/` on the new site.
 

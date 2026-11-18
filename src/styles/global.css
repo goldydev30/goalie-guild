@@ -41,3 +41,21 @@ a:hover { color: var(--accent-hover); }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin: 2.5em 0; }
 .prose code { font-size: .9em; background: var(--well); padding: 1px 5px; }
 .prose iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
+
+.prose mark { background: none; color: var(--accent); font-weight: 600; }
+.prose figure { margin: 2em 0; }
+.prose figure img { border: 1px solid var(--line); }
+.prose figcaption { font-family: var(--font-ui); font-size: 14px; color: var(--muted); margin-top: 8px; }
+.prose figcaption:empty { display: none; }
+.prose details { border: 1px solid var(--line); background: var(--panel); padding: 12px 20px; margin: 12px 0; }
+.prose summary { cursor: pointer; font-weight: 600; }
+.prose details[open] summary { margin-bottom: 12px; }
+
+/* GitBook card grids (e.g. Lift The Mask providers) */
+.prose .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin: 2em 0; }
+.prose .card { background: var(--panel); border: 1px solid var(--line); display: flex; flex-direction: column; }
+.prose .card img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.prose .card-body { padding: 12px 16px; font-size: 16px; }
+.prose .card-body p { margin: 0 0 6px; }
+.prose .card-link { font-family: var(--font-ui); font-size: 14px; }
+.prose iframe.spotify { aspect-ratio: auto; height: 232px; }

@@ -9,6 +9,8 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
+    // Banner image from GitBook's page cover, root-relative (/assets/gitbook/...)
+    cover: z.string().optional(),
     // true until the page's real text comes in from the GitBook import
     placeholder: z.boolean().default(false),
   }),
