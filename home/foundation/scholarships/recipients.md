@@ -9,7 +9,36 @@ Below is a compiled list of scholarship recipients by calendar year. All scholar
 <summary>2026</summary>
 
 <mark style="color:red;">**October Saves**</mark>\
-TBA
+Aaron Toth\
+Ayrton Whitehouse\
+Cayden Burke\
+Lucas Marcaccio\
+Michael Travaglini\
+Sam Gitchel\
+Sophia May\
+Dustin Zoino\
+Huck Gill\
+LJ Gibbs\
+Lucas Epstein\
+Romneya Granito\
+Brandon Rich\
+Clara Proulx\
+Claude Williams\
+Trinity Nardelli\
+Bryce Whalen\
+Campbell McGalliard\
+Corbyn Pacheco\
+Julien Nunes-Siegel\
+Mikey Nudo\
+Nora McMakin\
+Ztending\
+Averre Cavanagh\
+Cole Theodos\
+Dennis Evans\
+Gideon Abbott\
+Jack Scheiderman\
+Liam Parkinson\
+Noah Canfield
 
 <mark style="color:red;">**Charity Events**</mark>\
 Free Range Tendies 3\
